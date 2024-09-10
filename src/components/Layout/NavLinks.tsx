@@ -1,28 +1,37 @@
-import { Link, VStack } from "@chakra-ui/react";
+import { Flex, Link, useMediaQuery } from "@chakra-ui/react";
 
 const NavLinks = ({ onClose }: { onClose: () => void }) => {
+  const [isLargerThanTablet] = useMediaQuery("(min-width: 768px)");
   return (
-    <VStack
+    <Flex
       as="nav"
       align="start"
-      spacing="6"
-      fontSize="2xl"
-      mt="6"
+      gap={{ base: "6", md: "8", lg: "10" }}
+      direction={{ base: "column", md: "row" }}
+      fontSize={{ base: "2xl", md: "lg" }}
       fontWeight="medium"
+      mt={{ base: "6", md: "0" }}
     >
-      <Link onClick={onClose} href="/">
+      <Link onClick={isLargerThanTablet ? undefined : onClose} href="/">
         Home
       </Link>
-      <Link onClick={onClose} href="/#about">
+      <Link onClick={isLargerThanTablet ? undefined : onClose} href="/#about">
         About
       </Link>
-      <Link onClick={onClose} href="/#projects">
+      <Link
+        onClick={isLargerThanTablet ? undefined : onClose}
+        href="/#projects"
+      >
         Projects
       </Link>
-      <Link onClick={onClose} href="/#contact">
+      <Link
+        hideFrom="md"
+        onClick={isLargerThanTablet ? undefined : onClose}
+        href="/#contact"
+      >
         Contact
       </Link>
-    </VStack>
+    </Flex>
   );
 };
 
