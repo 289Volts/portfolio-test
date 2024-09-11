@@ -16,7 +16,14 @@ export const Header = () => {
   const [isLargerThanTablet] = useMediaQuery("(min-width: 768px)");
 
   return (
-    <Box bg="white" as="header" shadow={"sm"}>
+    <Box
+      bg="white"
+      as="header"
+      shadow="sm"
+      position="fixed"
+      insetInline="0"
+      zIndex="10"
+    >
       <Flex
         justify="space-between"
         mx="auto"
