@@ -12,8 +12,8 @@ const Home = () => {
     <>
       <HeroSection />
       <ValuePropSection />
-      <TestimonialSection position="first" isVisible />
       <AboutSection />
+      <TestimonialSection position="first" isVisible={false} />
       <ExperienceSection />
       <SkillsSection />
       <ProjectsSection />

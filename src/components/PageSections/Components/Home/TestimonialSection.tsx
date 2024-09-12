@@ -8,11 +8,11 @@ type TTestimonialSectionProps = {
 };
 const TestimonialSection = ({
   position,
-  // isVisible,
+  isVisible,
 }: TTestimonialSectionProps) => {
   return (
     <Box
-      // display={isVisible ? "block" : "none"}
+      display={isVisible ? "block" : "none"}
       as="section"
       w={{ base: "90%", xl: "80%" }}
       maxWidth="1440px"

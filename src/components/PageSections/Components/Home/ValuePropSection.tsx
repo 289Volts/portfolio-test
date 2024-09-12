@@ -14,7 +14,7 @@ const ValuePropSection = () => {
         heading="Why should you hire me?"
         subHeading="Here's a little bit about me 😉"
       />
-      <Stack gap={["4", "10"]} mt="4">
+      <Stack gap={["4", "10"]} mt={{ base: "5", md: "6", lg: "7" }}>
         <Box fontSize={{ base: "md", md: "lg", xl: "xl" }}>
           <Text align="center" mb="4">
             In today's digital age, it's essential for your business to be able

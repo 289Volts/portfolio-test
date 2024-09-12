@@ -8,7 +8,7 @@ const CusHeading = ({
   subHeading?: string;
 }) => {
   return (
-    <Stack gap="1" textAlign="center" mt={{ base: "14", md: "20" }}>
+    <Stack gap="3" textAlign="center" mt={{ base: "14", md: "20" }}>
       <Heading size={{ base: "xl", lg: "2xl" }}>{heading}</Heading>
       <Text fontSize={{ base: "lg", lg: "xl" }} fontWeight="medium">
         {subHeading}

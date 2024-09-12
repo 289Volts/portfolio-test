@@ -1,4 +1,5 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
+import ExtLinkIcon from "../../../Icons/ExtLinkIcon";
 import CusHeading from "../../../Shared/CusHeading";
 
 const AboutSection = () => {
@@ -11,42 +12,40 @@ const AboutSection = () => {
       mx="auto"
     >
       <CusHeading
-        heading="Why should you hire me?"
+        heading="Who am I?"
         subHeading="Here's a little bit about me 😉"
       />
       <Flex
         direction={{ base: "column", md: "row" }}
         align={["start", "center"]}
-        gap={["4", "10"]}
-        mt="4"
+        gap={["6", "10"]}
+        mt={{ base: "5", md: "6", lg: "7" }}
       >
         <Box
           w={{ base: "100%", md: "50%" }}
           fontSize={{ base: "md", md: "lg", xl: "xl" }}
         >
           <Text align={{ base: "center", md: "left" }} mb="4">
-            In today's digital age, it's essential for your business to be able
-            to <strong>properly communicate your brand message</strong> and have
-            a <strong>strong online presence</strong>. Unfortunately, if
-            potential customers can't easily find you online or when your
-            customers have a poor experience with your products, your business
-            will suffer{" "}
-            <Box as="span" fontWeight="bold" color="red.500">
-              financial losses 📉
-            </Box>
-            . This can occur due to poorly optimized and unresponsive web
-            interfaces and applications.
+            My name is Roland Joshua 👋🏽, a frontend developer skilled with
+            NextJS, TailwindCSS and MongoDB to name a few, and with an interest
+            in sales, I'm passionate about using my technical skills to help
+            businesses grow.
           </Text>
           <Text align={{ base: "center", md: "left" }}>
-            By working with me, you not only get someone who is technically
-            skilled, you also have{" "}
-            <strong className="text-green-500">
-              someone who is interested in your business growth 📈
-            </strong>
-            . As a web developer, I can offer your business a solution to these
-            problems. I can improve your online presence, make your web
-            applications or websites more optimized, and easier to navigate, so
-            that you can record higher conversion rates.
+            I got into programming due to a motivation to build my own company.
+            I once had a startup idea but I couldn&apos;t bring the idea to
+            fruition because of my skills limitation but with perseverance and
+            dedication, I have been able to build a product of my own called{" "}
+            <Link
+              display="inline-flex"
+              alignItems="center"
+              gap="1"
+              fontWeight="bold"
+              isExternal
+              href="www.theguestgallery.com"
+            >
+              The Guest Gallery <ExtLinkIcon />
+            </Link>
           </Text>
         </Box>
         <Box
@@ -55,7 +54,7 @@ const AboutSection = () => {
           overflow="hidden"
         >
           <Image
-            aspectRatio={{ base: "3/3", md: "4/3" }}
+            aspectRatio={{ base: "3/3", md: "auto", lg: "3/3", xl: "4/3" }}
             objectFit="cover"
             objectPosition="top center"
             src="/src/assets/images/roland.jpeg"
