@@ -56,21 +56,42 @@ const ProjectCard = ({
       </Stack>
       <Flex align="center" justify="space-between" fontWeight="medium">
         {githubUrl && (
-          <Flex gap="2" align="center">
-            <Link isExternal href={githubUrl}>
-              View Code
-            </Link>
-            <GithubIcon />{" "}
-          </Flex>
+          <Link
+            border="1px solid black"
+            display="flex"
+            alignItems="center"
+            fontWeight="bold"
+            gap="2"
+            px="2"
+            py="1"
+            rounded="full"
+            isExternal
+            href={githubUrl}
+          >
+            View Code <GithubIcon />{" "}
+          </Link>
         )}
 
         {liveUrl && (
-          <Flex gap="2" align="center">
-            <Link isExternal href={liveUrl}>
-              View Live
-            </Link>
-            <ExtLinkIcon />{" "}
-          </Flex>
+          <Link
+            border="1px solid black"
+            display="flex"
+            alignItems="center"
+            fontWeight="semibold"
+            _hover={{
+              bg: { md: "#0000000a" },
+              border: { md: "1px solid #0000000a" },
+            }}
+            px="2"
+            py="1"
+            gap="1"
+            rounded="full"
+            isExternal
+            href={liveUrl}
+          >
+            View Live
+            <ExtLinkIcon />
+          </Link>
         )}
       </Flex>
     </Flex>
