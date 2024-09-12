@@ -59,7 +59,7 @@ const ProjectsSection = () => {
       />
       <Box
         mt={{ base: "5", md: "6", lg: "7" }}
-        gap={{ base: "7", md: "10" }}
+        gap={{ base: "7", md: "8" }}
         display="grid"
         gridTemplateColumns={{
           base: "repeat(1, 1fr)",

@@ -2,7 +2,6 @@ import {
   Box,
   Flex,
   IconButton,
-  Link,
   useDisclosure,
   useMediaQuery,
 } from "@chakra-ui/react";
@@ -42,7 +41,7 @@ export const Header = () => {
           icon={<HamburgerIcon className="h-6 w-6" />}
         />
         {isLargerThanTablet && <NavLinks onClose={onClose} />}
-        <Link
+        {/* <Link
           fontSize="lg"
           fontWeight="medium"
           hideBelow="md"
@@ -56,7 +55,7 @@ export const Header = () => {
           href="/#contact"
         >
           Contact
-        </Link>
+        </Link> */}
         <MobileNavMenu isOpen={isOpen} onClose={onClose} />
       </Flex>
     </Box>
