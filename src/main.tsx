@@ -1,4 +1,5 @@
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { SkipNavLink } from "@chakra-ui/skip-nav";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
@@ -31,6 +32,7 @@ const theme = extendTheme({
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ChakraProvider theme={theme}>
+      <SkipNavLink />
       <App />
     </ChakraProvider>
   </StrictMode>,

@@ -52,7 +52,12 @@ const data = [
 ];
 const ProjectsSection = () => {
   return (
-    <Box as="section" w={{ base: "90%", xl: "80%" }} mx="auto">
+    <Box
+      as="section"
+      w={{ base: "90%", xl: "80%" }}
+      mx="auto"
+      scrollMarginTop={"100px"}
+    >
       <CusHeading
         heading="Note-worthy projects"
         subHeading="Proof of my competence"
