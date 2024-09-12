@@ -8,7 +8,12 @@ const HeroSection = () => {
           <Heading as="h1" size="2xl" fontWeight="bold">
             Hiring is expensive, but hiring the wrong person is MORE expensive!
           </Heading>
-          <Text fontWeight="semibold">
+          <Text
+            fontWeight="semibold"
+            mx="auto"
+            maxW="500px"
+            fontSize={{ md: "lg" }}
+          >
             I can help you not make that costly mistake that will set you back
             and make your revenue grow.
           </Text>
