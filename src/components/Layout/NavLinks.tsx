@@ -24,13 +24,13 @@ const NavLinks = ({ onClose }: { onClose: () => void }) => {
       >
         Projects
       </Link>
-      <Link
+      {/* <Link
         hideFrom="md"
         onClick={isLargerThanTablet ? undefined : onClose}
         href="/#contact"
       >
         Contact
-      </Link>
+      </Link> */}
     </Flex>
   );
 };
