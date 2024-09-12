@@ -59,7 +59,11 @@ const SkillsSection = () => {
       >
         {" "}
         {data.map((item) => (
-          <SkillCard key={item.name} {...item} />
+          <SkillCard
+            key={item.name}
+            {...item}
+            hasOddLast={!!(data.length % 2)}
+          />
         ))}
       </Box>
     </Box>

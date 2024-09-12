@@ -32,8 +32,8 @@ const ExperienceSection = () => {
   return (
     <Box as="section" w={{ base: "90%", xl: "80%" }} mx="auto" maxWidth="900px">
       <CusHeading
-        heading="My Experience"
-        subHeading="Here's where I've worked"
+        heading="My Work Experience"
+        subHeading="Where I've gained expertise in."
       />
       <Flex
         mt={{ base: "5", md: "6", lg: "7" }}

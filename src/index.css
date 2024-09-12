@@ -5,8 +5,3 @@
 #root {
   @apply grid min-h-screen grid-rows-[auto_1fr_auto] overflow-hidden;
 }
-
-.skillsGrid:nth-child(8) {
-  grid-column: span 4;
-  color: red;
-}

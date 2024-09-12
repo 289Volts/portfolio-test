@@ -9,6 +9,7 @@ const AboutSection = () => {
       as="section"
       w={{ base: "90%", xl: "80%" }}
       maxW="1440px"
+      scrollMarginTop={"100px"}
       mx="auto"
     >
       <CusHeading
