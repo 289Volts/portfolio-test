@@ -54,6 +54,7 @@ const ProjectsSection = () => {
   return (
     <Box
       as="section"
+      id="projects"
       w={{ base: "90%", xl: "80%" }}
       mx="auto"
       scrollMarginTop={"100px"}

@@ -41,6 +41,15 @@ const Footer = () => {
             <ExtLinkIcon className="ml-1" />
           </Link>
         </Flex>
+        <Link
+          display="flex"
+          isExternal
+          alignItems="center"
+          href="mailto:joshuaroland289@gmail.com"
+        >
+          Send me an email
+          <ExtLinkIcon className="ml-1" />
+        </Link>
       </Flex>
     </Box>
   );

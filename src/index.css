@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 #root {
   @apply grid min-h-screen grid-rows-[auto_1fr_auto] overflow-hidden;
 }

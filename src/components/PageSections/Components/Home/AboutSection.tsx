@@ -23,16 +23,17 @@ const AboutSection = () => {
         mt={{ base: "5", md: "6", lg: "7" }}
       >
         <Box
+          textAlign={{ base: "center", md: "left" }}
           w={{ base: "100%", md: "50%" }}
           fontSize={{ base: "md", md: "lg", xl: "xl" }}
         >
-          <Text align={{ base: "center", md: "left" }} mb="4">
+          <Text>
             My name is Roland Joshua 👋🏽, a frontend developer skilled with
             NextJS, TailwindCSS and MongoDB to name a few, and with an interest
             in sales, I'm passionate about using my technical skills to help
             businesses grow.
           </Text>
-          <Text align={{ base: "center", md: "left" }}>
+          <Text my="4">
             I got into programming due to a motivation to build my own company.
             I once had a startup idea but I couldn&apos;t bring the idea to
             fruition because of my skills limitation but with perseverance and
@@ -46,6 +47,18 @@ const AboutSection = () => {
               href="www.theguestgallery.com"
             >
               The Guest Gallery <ExtLinkIcon />
+            </Link>
+          </Text>
+          <Text>
+            Interested in working with me?{" "}
+            <Link
+              display="inline-flex"
+              isExternal
+              alignItems="center"
+              href="mailto:joshuaroland289@gmail.com"
+            >
+              Send me an email
+              <ExtLinkIcon className="ml-1" />
             </Link>
           </Text>
         </Box>

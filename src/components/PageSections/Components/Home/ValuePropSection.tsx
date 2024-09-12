@@ -1,5 +1,6 @@
-import { Box, Stack, Text } from "@chakra-ui/react";
+import { Box, Link, Stack, Text } from "@chakra-ui/react";
 import { SkipNavContent } from "@chakra-ui/skip-nav";
+import ExtLinkIcon from "../../../Icons/ExtLinkIcon";
 import CusHeading from "../../../Shared/CusHeading";
 
 const ValuePropSection = () => {
@@ -19,8 +20,8 @@ const ValuePropSection = () => {
           subHeading="See how I can help you"
         />
         <Stack gap={["4", "10"]} mt={{ base: "5", md: "6", lg: "7" }}>
-          <Box fontSize={{ base: "md", md: "lg", xl: "xl" }}>
-            <Text align="center" mb="4">
+          <Box textAlign="center" fontSize={{ base: "md", md: "lg", xl: "xl" }}>
+            <Text>
               In today's digital age, it's essential for your business to be
               able to <strong>properly communicate your brand message</strong>{" "}
               and have a <strong>strong online presence</strong>. Unfortunately,
@@ -33,7 +34,7 @@ const ValuePropSection = () => {
               . This can occur due to poorly optimized and unresponsive web
               interfaces and applications.
             </Text>
-            <Text align="center">
+            <Text my="4">
               By working with me, you not only get someone who is technically
               skilled, you also have{" "}
               <strong className="text-green-500">
@@ -43,6 +44,18 @@ const ValuePropSection = () => {
               these problems. I can improve your online presence, make your web
               applications or websites more optimized, and easier to navigate,
               so that you can record higher conversion rates.
+            </Text>
+            <Text>
+              Interested in working with me?{" "}
+              <Link
+                display="inline-flex"
+                isExternal
+                alignItems="center"
+                href="mailto:joshuaroland289@gmail.com"
+              >
+                Send me an email
+                <ExtLinkIcon className="ml-1" />
+              </Link>
             </Text>
           </Box>
         </Stack>
