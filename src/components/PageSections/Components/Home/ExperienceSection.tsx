@@ -13,7 +13,7 @@ const data = [
     name: "CooBase GmBh",
     role: "Frontend Developer",
     duration: "July 2023 - November 2023",
-    desc: "Collaborated with team lead to enhance component testing, boosting task delivery speed by 20% and improving API integration. Researched and applied strategies to reduce compilation times by 20%, increasing overall efficiency. Designed semantic HTML elements and optimized Vuetify components, improving performance by 35% and enhancing developer experience.",
+    desc: "Collaborated with the team lead to improve Vuetify component testing, boosting task delivery speed by 20% and improving API integration. Researched and applied strategies to reduce compilation times by 20%, increasing overall efficiency. Designed semantic HTML elements and optimized components, improving performance by 35% and enhancing developer experience.",
   },
   // {
   //   name: "CooBase GmBh",
@@ -43,9 +43,7 @@ const ExperienceSection = () => {
         gap={{ base: "4", md: "6" }}
       >
         {data.map((item) => (
-          <>
-            <ExperienceCard key={item.name} {...item} />
-          </>
+          <ExperienceCard key={item.name} {...item} />
         ))}
       </Flex>
     </Box>

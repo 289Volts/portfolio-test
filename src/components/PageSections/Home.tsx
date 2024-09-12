@@ -1,5 +1,4 @@
 import AboutSection from "./Components/Home/AboutSection";
-import ContactSection from "./Components/Home/ContactSection";
 import ExperienceSection from "./Components/Home/ExperienceSection";
 import HeroSection from "./Components/Home/HeroSection";
 import ProjectsSection from "./Components/Home/ProjectsSection";
@@ -14,11 +13,11 @@ const Home = () => {
       <ValuePropSection />
       <AboutSection />
       <TestimonialSection position="first" isVisible={false} />
-      <ExperienceSection />
       <SkillsSection />
+      <ExperienceSection />
       <ProjectsSection />
-      <TestimonialSection position="last" isVisible />
-      <ContactSection />
+      {/* <TestimonialSection position="last" isVisible /> */}
+      {/* <ContactSection /> */}
     </>
   );
 };

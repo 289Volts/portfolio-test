@@ -14,6 +14,7 @@ const ExperienceCard = ({
 }: TExperienceCardProps) => {
   return (
     <Flex
+      key={name}
       direction="column"
       // width={{ base: "100%", md: "45%" }}
       flex="1"

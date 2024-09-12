@@ -1,10 +1,22 @@
 import { Image, Text, VStack } from "@chakra-ui/react";
 
-const SkillCard = () => {
+type TSkillCardProps = {
+  name: string;
+  image: string;
+};
+const SkillCard = ({ name, image }: TSkillCardProps) => {
   return (
-    <VStack>
-      <Image src="/src/assets/images/tailwindcss.svg" alt="" w="60px" />
-      <Text>Text</Text>
+    <VStack
+      key={name}
+      sx={{
+        ":last-of-type": {
+          gridColumn: { base: "span 1", md: "span 4" },
+        },
+      }}
+      textAlign="center"
+    >
+      <Image src={image} alt="" w="60px" />
+      <Text fontWeight="medium">{name}</Text>
     </VStack>
   );
 };
