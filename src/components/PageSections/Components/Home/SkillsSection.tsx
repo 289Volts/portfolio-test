@@ -5,39 +5,39 @@ import CusHeading from "../../../Shared/CusHeading";
 const data = [
   {
     name: "NextJs",
-    image: "/src/assets/images/nextjs.svg",
+    image: "/assets/images/nextjs.svg",
   },
   {
     name: "NodeJS",
-    image: "/src/assets/images/nodejs.svg",
+    image: "/assets/images/nodejs.svg",
   },
   {
     name: "MongoDB",
-    image: "/src/assets/images/mongodb.svg",
+    image: "/assets/images/mongodb.svg",
   },
   {
     name: "TailwindCSS",
-    image: "/src/assets/images/tailwindcss.svg",
+    image: "/assets/images/tailwindcss.svg",
   },
   {
     name: "Chakra UI",
-    image: "/src/assets/images/chakra.png",
+    image: "/assets/images/chakra.png",
   },
   {
     name: "Vitest",
-    image: "/src/assets/images/vitest.svg",
+    image: "/assets/images/vitest.svg",
   },
   {
     name: "Testing Library",
-    image: "/src/assets/images/testinglib.png",
+    image: "/assets/images/testinglib.png",
   },
   {
     name: "Framer Motion",
-    image: "/src/assets/images/framer.svg",
+    image: "/assets/images/framer.svg",
   },
   {
     name: "Framer",
-    image: "/src/assets/images/framer.svg",
+    image: "/assets/images/framer.svg",
   },
 ];
 const SkillsSection = () => {

@@ -71,7 +71,7 @@ const AboutSection = () => {
             aspectRatio={{ base: "3/3", md: "auto", lg: "3/3", xl: "4/3" }}
             objectFit="cover"
             objectPosition="top center"
-            src="/src/assets/images/roland.jpeg"
+            src="/assets/images/roland.jpeg"
             alt=""
           />
         </Box>
